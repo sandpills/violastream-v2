@@ -37,7 +37,7 @@ window.addEventListener('load', (event) => {
             let call = peer.call(id, stream)
             call.on('stream', function(violaStream){
                 if (!vidList.includes(call.peer)) { // only show my video
-                    addRemoteVideo(violaStream)
+                    addVideo(violaStream)
                     vidList.push(call.peer)
                 }
             })
