@@ -2,29 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="p5.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script> 
-    <script src="mypeer.js"></script> 
+    <script src="violapeer.js"></script> 
 
-    <!-- <script src="/index.js"></script> -->
-    <script src="p5.speech.js"></script>
-    <script src="sketch.js"></script>
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Viola page</title>
   </head>
   <body>
     <div class="header">
-      <h1 id="title">✨ welcome to violastream 2.0</h1>
-      <p>
-        click on buttons to vote. highest voted task will become viola's next
-        action, until more stop votes are casted.
-      </p>
+      <h1 id="title">✨ for viola only</h1>
+
     </div>
-    <button id="call-peer">Watch stream</button>
+    <h1 id="show-peer">1</h1>
+    <input id="peerID" placeholder="Peer ID">
+    <button id="call-peer">Watch video</button>
     <div class="content" id="content">
-      <video class="remoteVideo" id="remoteVideo"> RemoteVideo </video>
     </div>
       <div id="commands">
         <p id="vote-status"></p>
