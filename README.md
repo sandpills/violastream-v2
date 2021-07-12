@@ -1,2 +1,2 @@
 # violastream-v2
-this might fail but imma try
+Trying to use peer.js with WebRTC to as a streaming device.
